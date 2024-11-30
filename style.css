@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: crimson;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Style the section to use Flexbox */
+section {
+  display: flex; /* Mengaktifkan Flexbox */
+}
+
+/* Style the nav */
+nav {
+  width: 30%;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ccc;
+}
+
+li a {
+  display: block;
+  color: #0e0c0c;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  color: gray;
+}
+
+/* Change the link color when the target is active */
+li a.active {
+  color: crimson;
+}
+
+/* Style the article */
+article {
+  flex: 1; /* Isi ruang yang tersisa */
+  padding: 15px;
+  background-color: #f1f1f1;
+}
+
+p {
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 10px auto;
+}
+
+h1 {
+  font-size: 35px; /* Mengatur ukuran font lebih besar lagi */
+  margin:20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: crimson;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column; /* Atur ulang elemen menjadi kolom */
+  }
+  nav, article {
+    width: 100%;
+  }
+}

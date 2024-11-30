@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>UTS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: crimson;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Style the section to use Flexbox */
+section {
+  display: flex; /* Mengaktifkan Flexbox */
+}
+
+/* Style the nav */
+nav {
+  width: 30%;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ccc;
+}
+
+li a {
+  display: block;
+  color: #0e0c0c;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  color: gray;
+}
+
+/* Change the link color when the target is active */
+li a.active {
+  color: crimson;
+}
+
+/* Style the article */
+article {
+  flex: 1; /* Isi ruang yang tersisa */
+  padding: 15px;
+  background-color: #f1f1f1;
+}
+
+p {
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 10px auto;
+}
+
+h1 {
+  font-size: 35px; /* Mengatur ukuran font lebih besar lagi */
+}
+
+/* Style the footer */
+footer {
+  background-color: crimson;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column; /* Atur ulang elemen menjadi kolom */
+  }
+  nav, article {
+    width: 100%;
+  }
+}
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin : 20px;
+}
+td, th {
+    border: 2px solid black;
+    padding: 8px; 
+}
+.td_no {
+  text-align: center;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: crimson;
+    color: white; 
+  }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="si_putih.png" width="7%" >
+  <h3>Marsha Zharifah Putri</h3>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="home.html" id="home">HOME</a></li>
+      <li><a href="biodata.html" id="biodata">BIODATA</a></li>
+      <li><a class="active" href="data_mahasiswa.html" id="data_mahasiswa">DATA MAHASISWA</a></li>
+      <li><a href="kontak.html" id="contact">CONTACT</a></li>
+    </ul>
+  </nav>
+  
+  <article>   
+    <h1 style="color:crimson">DATA MAHASISWA</h1>
+    <center><table border=1 width="80%">
+      <tr>
+          <th rowspan="2">NO</td>
+          <th colspan="3">DATA</td>
+      </tr>
+      <tr>
+          <th>NIM</th>
+          <th>NAMA</th>
+          <th>ALAMAT</th>
+      </tr>
+      <tr>
+        <td class="td_no">1</td>
+        <td>240402123</td>
+        <td>Marsha Zharifah Putri</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">2</td>
+        <td>240402124</td>
+        <td>Zulkhairil Azmi</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">3</td>
+        <td>240402125</td>
+        <td>Haekal Harits</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">4</td>
+        <td>240402126</td>
+        <td>Vonny Aulya</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">5</td>
+        <td>240402127</td>
+        <td>Muhammad Revanda Arlen</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">6</td>
+        <td>240402128</td>
+        <td>Reni Sukesi</td>
+        <td>Pekanbaru</td></tr>
+      <tr>
+        <td class="td_no">7</td>
+        <td>240402129</td>
+        <td>Khayla Aprilia Azzahra</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">8</td>
+        <td>240402130</td>
+        <td>Syahru Al Azkiya</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">9</td>
+        <td>240402131</td>
+        <td>Andiwi Aulia Ramadhani</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">10</td>
+        <td>240402132</td>
+        <td>Ismir Septiyandi</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">11</td>
+        <td>240402133</td>
+        <td>M. Zacky Asral</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">12</td>
+        <td>240402134</td>
+        <td>Syifa Raniah</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">13</td>
+        <td>240402135</td>
+        <td>Bagas Arifudin</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">14</td>
+        <td>240402136</td>
+        <td>Muhammad Fazlullah Shafiq</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">15</td>
+        <td>240402137</td>
+        <td>Raihan Abdul Rafie</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">16</td>
+        <td>240402138</td>
+        <td>Fatthoni Muhammad Rifqi</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">17</td>
+        <td>240402139</td>
+        <td>Rafideo</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">18</td>
+        <td>240402140</td>
+        <td>Rhivany Aisyah</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">19</td>
+        <td>240402141</td>
+        <td>Qaddafi Muzain Hanami Delsi</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">20</td>
+        <td>240402142</td>
+        <td>Nayla Fatiah Amalia Putri</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">21</td>
+        <td>240402143</td>
+        <td>Rizky Dika Fahreza</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">22</td>
+        <td>240402146</td>
+        <td>Fadhil Arvia Luthfi</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">23</td>
+        <td>240402147</td>
+        <td>Nurul Asyifa</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">24</td>
+        <td>240402148</td>
+        <td>Zulfikri Denni Yanda</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">25</td>
+        <td>240402149</td>
+        <td>Ubaidillah Mikhraj</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">26</td>
+        <td>240402150</td>
+        <td>Nadin Agustri Wirman</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">27</td>
+        <td>240402152</td>
+        <td>Farhan Saputra</td>
+        <td>Pekanbaru</td></tr>
+      <tr>
+        <td class="td_no">28</td>
+        <td>240402153</td>
+        <td>Siti Nur Maulidia</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">29</td>
+        <td>240402154</td>
+        <td>Novita Firma</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">30</td>
+        <td>240402155</td>
+        <td>Muhammad Adrian</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">31</td>
+        <td>240402156</td>
+        <td>Citra Khairiyatul Barokah</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">32</td>
+        <td>240402157</td>
+        <td>Restu Toraja Stevyara</td>
+        <td>Pekanbaru</td>
+      </tr>
+      <tr>
+        <td class="td_no">33</td>
+        <td>240402061</td>
+        <td>M. Arif Friyansyah</td>
+        <td>Pekanbaru</td>
+      </tr>
+    </center></table>
+      
+  </article>
+</section>
+
+<footer>
+  <p>Contact Us On :
+    <a href="https://wa.me/6289636230269">WhatsApp</a>
+</p>
+</footer>
+
+</body>
+</html>
+
